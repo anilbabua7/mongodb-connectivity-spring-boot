@@ -1,0 +1,3 @@
+This project is a simple and effective in creating connection with MongoDb and fetch the document.
+There are few end points for reference in controller package.
+This is connecting to external mongodb database.
