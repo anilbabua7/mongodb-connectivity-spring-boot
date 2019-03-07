@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mongodb.connectivity.entity.TeamInfoEntity;
+import com.mongodb.connectivity.entity.TeamName;
 import com.mongodb.connectivity.repository.TeamInfoRepo;
 
 @RestController
@@ -22,7 +23,7 @@ public class TeamInfoController {
 	}
 	
 	@RequestMapping(value="/getMembers/{team}")
-	public List<String> getMembers(@PathVariable String team){
+	public List<TeamName> getMembers(@PathVariable String team){
 		return teamRepo.findByTeamName(team);
 	}
 
